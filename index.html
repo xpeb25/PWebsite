@@ -1,75 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- === CSS FILE === -->
-   <link rel="stylesheet" href="style.css">
-  <title>Personal Website</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- === CSS FILE === -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <!-- === HEADER START === -->
+    <header>
+      <!-- === PROFILE === -->
+      <div class="profile">
+        <img src="Image_for_web/images/pfp.jpg" alt="" width="150px" />
+        <h1>R.Humphreys</h1>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
 
+      <!-- === NAVIGATION === -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="active"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-user"></i> About Me</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-
-
-  <!-- === HEADER START === -->
-   <header>
-
-    <!-- === PROFILE === -->
-    <div class="profile">
-      <img src="Image_for_web/images/pfp.jpg" alt="" width="150px">
-      <h1>R.Humphreys</h1>
-      <div class = "social-icons">
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>  
-        <a href="#"><i class="fa-brands fa-github"></i></a>  
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>  
-      </div> 
-    </div> 
-    
-    <!-- === NAVIGATION === -->
-     <nav>
-      <ul>
-        <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="#"><i class="fa-solid fa-user"></i> About Me</a></li>
-        <li><a href="#"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-      </ul>
-     </nav>
-
-     <!-- === FOOTER === -->
+      <!-- === FOOTER === -->
       <div class="footer">
-        <p>&copy; Copyright 2025 <br>Designed By <a href="https://github.com/xpeb25" target="_blank">xpeb25</a></p>
+        <p>
+          &copy; Copyright 2025 <br />Designed By
+          <a href="https://github.com/xpeb25" target="_blank">xpeb25</a>
+        </p>
       </div>
+    </header>
 
-   </head>
+    <!-- === MOBILE NAV TOGGLE === -->
+    <i class="fa-solid fa-bars" id="MenuBtn"></i>
+    <!-- === HEADER END === -->
 
-  <!-- === MOBILE NAV TOGGLE === -->
-   <i class="fa-solid fa-bars" id="MenuBtn"></i> 
-
-  <!-- === HEADER END === -->
-
-
-  <!-- === ALL BODY CONTENT === -->
-
-  <!-- Currently not working need fix -->
-  <main>
-    <!-- === HOME SECTION START === -->
-     <section id="home">
-      <div class="home-r">
-        <h1>Hello, I'm <br>Rashanon Humphreys<span>.</span></h1>
-        <p>i'm a <span class="auto-input">University student </span></p>
-      </div>
-     </section>
     <!-- === ALL BODY CONTENT === -->
-  </main>
 
+    <main>
+      <!-- === HOME SECTION START === -->
+      <section id="home">
+        <div class="home-row">
+          <h1>Hello, I'm <br />Rashanon Humphreys<span>.</span></h1>
+          <p>i'm a <span class="auto-input">University student. </span></p>
+        </div>
+      </section>
+      <!-- === HOME SECTION END === -->
 
+      <!-- === ABOUT SECTION START ===-->
+      <section id="about">
+        <h1 class="sub-heading">About</h1>
+        <div class="divider"></div>
+        <p>
+          I am a dedicated Computer Science student at Aberystwyth University,
+          passionate about coding and technology. Alongside my studies, I play
+          for the university's first team volleyball, enjoying the challenge and
+          teamwork it brings. I am also an enthusiastic climber and gym-goer,
+          committed to maintaining a balanced and active lifestyle. My pursuit
+          of excellence in both academics and sports reflects my drive for
+          continuous improvement and holistic development.
+        </p>
 
+        <div class="about-col">
+          <!-- img-col -->
+          <div class="img-col">
+            <img src="Image_for_web/images/IMG_5225.jpg" alt="" />
+          </div>
 
+          <!-- information -->
+          <div class="info-col">
+            <h2>Student</h2>
+            <p>
+              I am currently in my second year at Aberystwyth University, where
+              I am pursuing a degree in AI & Robotics. Next year, I will broaden
+              my academic experience by studying abroad during my third year.
+            </p>
+            <div class="icon-list-col">
+              <!-- Left-Side list -->
+              <div class="icon-list">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Birthday:</strong> <span>25/12/2004</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Phone:</strong> <span>+44 7305 343366</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>City:</strong> <span> Aberystwyth, Wales</span>
+                  </li>
+                </ul>
+              </div>
 
-  <!-- === MAIN JS FILE === -->
-   <script src="script.js"></script>
-   <!-- Font JS File (Icon File) -->
-    <script src="https://kit.fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
-</body>
+              <!-- Right-Side list -->
+              <div class="icon-list">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Age:</strong> <span>20</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Degree</strong> <span>---</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Email:</strong> <span>---</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- === ABOUT SECTION END ===-->
+    </main>
+
+    <!--Typed.JS File (for typing effect)-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- === MAIN JS FILE === -->
+    <script src="script.js"></script>
+    <!-- Font JS File (Icon File) -->
+    <script
+      src="https://kit.fontawesome.com/aa5f332820.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

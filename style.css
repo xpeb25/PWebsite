@@ -161,3 +161,125 @@ main {
     margin-left: 0;
   }
 }
+
+/* === HOME SECTION === */
+#home {
+  height: 100vh;
+  width: 100%;
+  background-image: url(Image_for_web/images/backG2.avif);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+  position: relative;
+}
+/* overlay */
+#home::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.431);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#home .home-row {
+  z-index: 1;
+}
+#home .home-row h1 {
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  line-height: 70px;
+}
+#home .home-row h1 span {
+  color: var(--themeColor);
+}
+#home .home-row p {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+#home .home-row p span {
+  border-bottom: 4px solid var(--themeColor);
+}
+
+/* === MOBILE VIEW === */
+@media only screen and (max-width: 670px) {
+  #home {
+    padding: 30px;
+  }
+  #home .home-row h1 {
+    font-size: 35px;
+    letter-spacing: 0;
+    line-height: 50px;
+  }
+  #home .home-row h1 br {
+    display: none;
+  }
+  #home .home-row p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+/* === ABOUT SECTION === */
+#about {
+  padding: 70px 30px;
+}
+/* Global heading*/
+.sub-heading {
+  color: #040b14;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.divider {
+  width: 80px;
+  height: 4px;
+  background-color: var(--themeColor);
+  border-radius: 3px;
+}
+#about .divider ~ p {
+  color: var(--textColor);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+#about .about-col {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+#about .about-col .img-col {
+  flex-basis: 35%;
+  text-align: center;
+}
+#about .about-col .img-col img {
+  width: 100%;
+}
+#about .about-col .info-col {
+  flex-basis: 70%;
+}
+#about .about-col .info-col h2 {
+  color: var(--themeColor);
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 0.5px;
+  margin-top: -10px;
+}
+#about .about-col .info-col p {
+  color: var(--textColor);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+#about .about-col .info-col .icon-list-col {
+  display: flex;
+  margin-top: 20px;
+  gap: 40px;
+}
