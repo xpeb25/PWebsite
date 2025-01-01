@@ -20,7 +20,6 @@ Welcome to my personal domain project! This website serves as a digital space to
 - HTML5
 - CSS3
 - JavaScript
-- [Any other technologies or frameworks you've used]
 
 ## Setup
 1. Clone the repository: `git clone https://github.com/yourusername/yourrepository.git`
